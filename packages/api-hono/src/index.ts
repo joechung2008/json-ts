@@ -4,6 +4,10 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
+app.get("/", (c) => {
+  return c.json("Hello Hono!");
+});
+
 app.post("/api/v1/parse", async (c) => {
   try {
     const text = await c.req.text();
@@ -20,17 +24,12 @@ app.post("/api/v1/parse", async (c) => {
   }
 });
 
-if (process.env.VERCEL !== "1") {
-  serve(
-    {
-      fetch: app.fetch,
-      port: 3000,
-    },
-    (info) => {
-      console.log(`Server is running on http://localhost:${info.port}`);
-    }
-  );
-}
-
-export default app;
-export const handler = app.fetch;
+serve(
+  {
+    fetch: app.fetch,
+    port: 3000,
+  },
+  (info) => {
+    console.log(`Server is running on http://localhost:${info.port}`);
+  }
+);
