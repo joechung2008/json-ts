@@ -1,7 +1,7 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@json-ts/parser": "file:../parser"
+    "@json-ts/parser": "1.0.0"
   },
   "license": "MIT",
   "main": "./dist/index.js",
