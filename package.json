@@ -14,7 +14,8 @@
     "build": "npm run build --workspaces",
     "format": "npm run format --workspaces",
     "lint": "npm run lint --workspaces",
-    "start": "npm start --workspace=packages/cli"
+    "start:api": "npm start --workspace=packages/api-hono",
+    "start:cli": "npm start --workspace=packages/cli"
   },
   "version": "1.0.0",
   "workspaces": [

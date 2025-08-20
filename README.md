@@ -26,13 +26,22 @@ npm run format
 npm run lint
 ```
 
+## Run the API
+
+```sh
+npm run start:api
+```
+
+This will start the API workspace. The server listens on http://localhost:3000; send requests to this endpoint to test the parser.
+
 ## Run the CLI
 
 ```sh
-npm start
+npm run start:cli
 ```
 
-This will start the CLI. In TTY mode, enter input and press Ctrl+D to finish.
+This will start the CLI workspace. In TTY mode, enter input and press Ctrl+D to finish.
+
 
 ## Notes
 
