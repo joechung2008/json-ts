@@ -1,7 +1,6 @@
 import { serve } from "@hono/node-server";
 import { parse } from "@json-ts/parser";
 import { Hono } from "hono";
-import { handle } from "hono/vercel";
 
 const app = new Hono();
 
@@ -34,4 +33,4 @@ if (process.env.VERCEL !== "1") {
 }
 
 export default app;
-export const POST = handle(app);
+export const handler = app.fetch;
