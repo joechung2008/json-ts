@@ -1,13 +1,16 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@json-ts/parser": "1.0.0"
+    "@hono/node-server": "^1.19.0",
+    "@json-ts/parser": "1.0.0",
+    "hono": "^4.9.2"
   },
   "license": "MIT",
   "main": "./dist/index.js",
-  "name": "@json-ts/cli",
+  "name": "@json-ts/api-hono",
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "dev": "tsx watch src/index.ts",
     "format": "prettier --write src",
     "lint": "npm-run-all lint:*",
     "lint:eslint": "eslint src --ext .ts",

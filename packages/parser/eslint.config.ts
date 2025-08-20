@@ -1,13 +1,17 @@
-import tseslint from 'typescript-eslint';
+import * as path from "node:path";
+import tseslint from "typescript-eslint";
 
-module.exports = [
+export default [
   ...tseslint.configs.recommended,
   {
-    files: ['**/*.ts'],
+    files: ["**/*.ts"],
     languageOptions: {
       parser: tseslint.parser,
-      ecmaVersion: 'latest',
-      sourceType: 'module',
+      ecmaVersion: "latest",
+      sourceType: "module",
+      parserOptions: {
+        tsconfigRootDir: path.join(__dirname, "../.."),
+      },
     },
   },
 ];
