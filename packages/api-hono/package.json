@@ -2,7 +2,7 @@
   "author": "Joe Chung",
   "dependencies": {
     "@hono/node-server": "^1.19.0",
-    "@json-ts/parser": "file:../../packages/parser",
+    "@json-ts/parser": "file:../parser",
     "hono": "^4.9.2"
   },
   "license": "MIT",
