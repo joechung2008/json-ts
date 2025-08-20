@@ -11,25 +11,25 @@ MIT
 ## Build Packages
 
 ```sh
-npm run build
+pnpm run build
 ```
 
 ## Format Packages
 
 ```sh
-npm run format
+pnpm run format
 ```
 
 ## Lint Packages
 
 ```sh
-npm run lint
+pnpm run lint
 ```
 
 ## Run the API
 
 ```sh
-npm run start:api
+pnpm run start:api
 ```
 
 This will start the API workspace. The server listens on http://localhost:3000; send requests to this endpoint to test the parser.
@@ -37,13 +37,12 @@ This will start the API workspace. The server listens on http://localhost:3000; 
 ## Run the CLI
 
 ```sh
-npm run start:cli
+pnpm run start:cli
 ```
 
 This will start the CLI workspace. In TTY mode, enter input and press Ctrl+D to finish.
 
-
 ## Notes
 
 - All commands should be run from the repository root.
-- Ensure dependencies are installed with `npm install` before running any commands.
+- Ensure dependencies are installed with `pnpm install` before running any commands.

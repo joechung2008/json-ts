@@ -11,14 +11,11 @@
   "name": "json-ts",
   "private": true,
   "scripts": {
-    "build": "npm run build --workspaces",
-    "format": "npm run format --workspaces",
-    "lint": "npm run lint --workspaces",
-    "start:api": "npm start --workspace=packages/api-hono",
-    "start:cli": "npm start --workspace=packages/cli"
+    "build": "pnpm -r run build",
+    "format": "pnpm -r run format",
+    "lint": "pnpm -r run lint",
+    "start:api": "pnpm --filter @json-ts/api-hono run start",
+    "start:cli": "pnpm --filter @json-ts/cli run start"
   },
-  "version": "1.0.0",
-  "workspaces": [
-    "packages/*"
-  ]
+  "version": "1.0.0"
 }

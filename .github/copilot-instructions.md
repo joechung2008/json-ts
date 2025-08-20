@@ -16,31 +16,31 @@
 - **Install dependencies:**
 
   ```sh
-  npm install
+  pnpm install
   ```
 
 - **Build all packages:**
 
   ```sh
-  npm run build
+  pnpm run build
   ```
 
 - **Format code:**
 
   ```sh
-  npm run format
+  pnpm run format
   ```
 
 - **Lint code:**
 
   ```sh
-  npm run lint
+  pnpm run lint
   ```
 
 - **Run API:**
 
   ```sh
-  npm run start:api
+  pnpm run start:api
   ```
 
   - Starts the API workspace using Hono. Provides RESTful endpoints for JSON parsing.
@@ -48,7 +48,7 @@
 - **Run CLI:**
 
   ```sh
-  npm run start:cli
+  pnpm run start:cli
   ```
 
   - Starts the CLI workspace in TTY mode. Enter input and press Ctrl+D to finish.
