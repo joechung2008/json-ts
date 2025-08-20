@@ -49,7 +49,7 @@ export function parse(expression: string, delimiters?: RegExp) {
           mode = Mode.String;
         } else if (ch === "t") {
           mode = Mode.True;
-        } else if (delimiters && delimiters.test(ch)) {
+        } else if (delimiters?.test(ch)) {
           mode = Mode.End;
         } else {
           throw new SyntaxError(

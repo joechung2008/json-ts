@@ -56,7 +56,7 @@ export function parse(expression: string, delimiters = /[ \n\r\t]/) {
         if (/\d/.test(ch)) {
           valueAsString += ch;
           pos++;
-        } else if (delimiters && delimiters.test(ch)) {
+        } else if (delimiters?.test(ch)) {
           mode = Mode.End;
         } else {
           mode = Mode.DecimalPoint;
@@ -68,7 +68,7 @@ export function parse(expression: string, delimiters = /[ \n\r\t]/) {
           valueAsString += ".";
           pos++;
           mode = Mode.Mantissa;
-        } else if (delimiters && delimiters.test(ch)) {
+        } else if (delimiters?.test(ch)) {
           mode = Mode.End;
         } else {
           mode = Mode.Exponent;
@@ -81,7 +81,7 @@ export function parse(expression: string, delimiters = /[ \n\r\t]/) {
           pos++;
         } else if (/e/i.test(ch)) {
           mode = Mode.Exponent;
-        } else if (delimiters && delimiters.test(ch)) {
+        } else if (delimiters?.test(ch)) {
           mode = Mode.End;
         } else {
           throw new SyntaxError(`unexpected character '${ch}'`);
@@ -122,7 +122,7 @@ export function parse(expression: string, delimiters = /[ \n\r\t]/) {
         if (/\d/.test(ch)) {
           valueAsString += ch;
           pos++;
-        } else if (delimiters && delimiters.test(ch)) {
+        } else if (delimiters?.test(ch)) {
           mode = Mode.End;
         } else {
           throw new SyntaxError(`expected digit, actual '${ch}'`);
@@ -134,6 +134,7 @@ export function parse(expression: string, delimiters = /[ \n\r\t]/) {
   switch (mode) {
     case Mode.Characteristic:
     case Mode.ExponentFirstDigit:
+    case Mode.ExponentSign:
       throw new SyntaxError(`incomplete expression, mode ${Mode[mode]}`);
 
     default:

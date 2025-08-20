@@ -42,8 +42,8 @@ export function parse(expression: string) {
           pos++;
           mode = Mode.End;
         } else {
-          const slice = expression.slice(pos),
-            value = parseValue(slice, /[ \n\r\t\],]/);
+          const slice = expression.slice(pos);
+          const value = parseValue(slice, /[ \n\r\t\],]/);
           token.values.push(value.token);
           pos += value.skip;
           mode = Mode.Comma;

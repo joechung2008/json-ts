@@ -15,7 +15,8 @@
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
     "start:api": "pnpm --filter @json-ts/api-hono run start",
-    "start:cli": "pnpm --filter @json-ts/cli run start"
+    "start:cli": "pnpm --filter @json-ts/cli run start",
+    "test": "pnpm --filter @json-ts/parser run test"
   },
   "version": "1.0.0"
 }

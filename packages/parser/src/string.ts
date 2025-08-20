@@ -9,9 +9,9 @@ enum Mode {
 }
 
 export function parse(expression: string) {
-  let mode = Mode.Scanning,
-    pos = 0,
-    value: string | undefined = undefined;
+  let mode = Mode.Scanning;
+  let pos = 0;
+  let value: string | undefined = undefined;
 
   while (pos < expression.length && mode !== Mode.End) {
     const ch = expression.charAt(pos);

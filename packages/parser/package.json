@@ -9,8 +9,14 @@
     "lint": "npm-run-all lint:*",
     "lint:eslint": "eslint src --ext .ts",
     "lint:prettier": "prettier --check src",
-    "test": "node test"
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage --passWithNoTests",
+    "test:watch": "vitest"
   },
   "type": "module",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "@vitest/coverage-v8": "3.2.4",
+    "vitest": "^3.2.4"
+  }
 }
