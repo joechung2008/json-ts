@@ -4,10 +4,6 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-app.get("/", (c) => {
-  return c.json("Hello Hono!");
-});
-
 app.post("/api/v1/parse", async (c) => {
   try {
     const text = await c.req.text();
