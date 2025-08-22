@@ -52,7 +52,15 @@ Starts the Express API workspace. The server listens on http://localhost:3000; s
 pnpm run start:api-hono
 ```
 
-Starts the API workspace using Hono. Provides RESTful endpoints for JSON parsing.
+Starts the Hono API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
+
+**Run Koa API:**
+
+```sh
+pnpm run start:api-koa
+```
+
+Starts the Koa API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
 
 - **Run CLI:**
 
@@ -68,6 +76,7 @@ Starts the CLI workspace in TTY mode. Enter input and press Ctrl+D to finish.
 - **CLI entry point:** `packages/cli/src/index.ts` is the main entry for CLI logic.
 - **Express API modules** (`packages/api-express/src/`): Main entry point is `src/index.ts`. Implements RESTful endpoints for JSON parsing using the Express framework. The API server listens on http://localhost:3000. Follows TypeScript conventions and uses its own ESLint configuration (`eslint.config.ts`).
 - **Hono API modules** (`packages/api-hono/src/`): Main entry point is `src/index.ts`. Implements RESTful endpoints for JSON parsing using the Hono framework. The API server listens on http://localhost:3000. Follows TypeScript conventions and uses its own ESLint configuration (`eslint.config.ts`).
+- **Koa API modules** (`packages/api-koa/src/`): Main entry point is `src/index.ts`. Implements RESTful endpoints for JSON parsing using the Koa framework. The API server listens on http://localhost:3000. Follows TypeScript conventions and uses its own ESLint configuration (`eslint.config.ts`).
 - **TypeScript project references** are used for package interdependencies (see `tsconfig.json` files in each package).
 - **ESLint** is configured per package (`eslint.config.ts`).
 

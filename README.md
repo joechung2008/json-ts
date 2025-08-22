@@ -32,7 +32,7 @@ pnpm run lint
 pnpm run start:api-hono
 ```
 
-This will start the API workspace using Hono. The server listens on http://localhost:3000; send requests to this endpoint to test the parser.
+This will start the Hono API workspace. The server listens on http://localhost:3000; send POST requests to this endpoint to test the parser.
 
 ## Run the Express API
 
@@ -40,7 +40,15 @@ This will start the API workspace using Hono. The server listens on http://local
 pnpm run start:api-express
 ```
 
-This will start the Express API workspace. The server listens on http://localhost:3000; send requests to `/api/v1/parse` to test the parser.
+This will start the Express API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
+
+## Run the Koa API
+
+```sh
+pnpm run start:api-koa
+```
+
+This will start the Koa API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
 
 ## Run the CLI
 
