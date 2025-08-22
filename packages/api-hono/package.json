@@ -3,7 +3,7 @@
   "dependencies": {
     "@hono/node-server": "^1.19.0",
     "@json-ts/parser": "workspace:*",
-    "hono": "^4.9.2"
+    "hono": "^4.9.4"
   },
   "license": "MIT",
   "main": "./dist/index.js",
