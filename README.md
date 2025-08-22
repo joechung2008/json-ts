@@ -26,13 +26,21 @@ pnpm run format
 pnpm run lint
 ```
 
-## Run the API
+## Run the Hono API
 
 ```sh
-pnpm run start:api
+pnpm run start:api-hono
 ```
 
-This will start the API workspace. The server listens on http://localhost:3000; send requests to this endpoint to test the parser.
+This will start the API workspace using Hono. The server listens on http://localhost:3000; send requests to this endpoint to test the parser.
+
+## Run the Express API
+
+```sh
+pnpm run start:api-express
+```
+
+This will start the Express API workspace. The server listens on http://localhost:3000; send requests to `/api/v1/parse` to test the parser.
 
 ## Run the CLI
 

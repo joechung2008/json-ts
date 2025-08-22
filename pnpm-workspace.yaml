@@ -1,4 +1,5 @@
 packages:
+  - packages/api-express
   - packages/api-hono
   - packages/cli
   - packages/parser

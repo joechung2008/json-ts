@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { Type, type NumberToken } from "./json";
+import { type NumberToken } from "./json";
 import * as object from "./object";
 
 describe("object module", () => {

@@ -14,7 +14,8 @@
     "build": "pnpm -r run build",
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
-    "start:api": "pnpm --filter @json-ts/api-hono run start",
+    "start:api-express": "pnpm --filter @json-ts/api-express run start",
+    "start:api-hono": "pnpm --filter @json-ts/api-hono run start",
     "start:cli": "pnpm --filter @json-ts/cli run start",
     "test": "pnpm --filter @json-ts/parser run test",
     "test:coverage": "pnpm --filter @json-ts/parser run test --coverage"
