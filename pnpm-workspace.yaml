@@ -2,8 +2,12 @@ packages:
   - packages/api-express
   - packages/api-hono
   - packages/api-koa
+  - packages/api-nestjs
   - packages/cli
   - packages/parser
 
 ignoredBuiltDependencies:
   - esbuild
+
+onlyBuiltDependencies:
+  - '@nestjs/core'

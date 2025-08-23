@@ -17,6 +17,7 @@
     "start:api-express": "pnpm --filter @json-ts/api-express run start",
     "start:api-hono": "pnpm --filter @json-ts/api-hono run start",
     "start:api-koa": "pnpm --filter @json-ts/api-koa run start",
+    "start:api-nestjs": "pnpm --filter @json-ts/api-nestjs run start",
     "start:cli": "pnpm --filter @json-ts/cli run start",
     "test": "pnpm --filter @json-ts/parser run test",
     "test:coverage": "pnpm --filter @json-ts/parser run test --coverage"

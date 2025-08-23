@@ -50,6 +50,14 @@ pnpm run start:api-koa
 
 This will start the Koa API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
 
+## Run the NestJS API
+
+```sh
+pnpm run start:api-nestjs
+```
+
+This will start the NestJS API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
+
 ## Run the CLI
 
 ```sh
@@ -62,3 +70,14 @@ This will start the CLI workspace. In TTY mode, enter input and press Ctrl+D to 
 
 - All commands should be run from the repository root.
 - Ensure dependencies are installed with `pnpm install` before running any commands.
+
+## Testing APIs with REST Client (VS Code Extension)
+
+To send test requests to the APIs using the REST Client extension:
+
+1. Install the [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) in VS Code.
+2. Open any `.rest` file in the `testdata/` directory.
+3. Click the "Send Request" button above a request to execute it.
+4. The response will appear in a new VS Code pane.
+
+The `.rest` files contain sample requests for all supported APIs.
