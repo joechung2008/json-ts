@@ -2,6 +2,7 @@ import * as path from "node:path";
 import tseslint from "typescript-eslint";
 
 export default [
+  { ignores: ["coverage", "dist"] },
   ...tseslint.configs.recommended,
   {
     files: ["**/*.ts"],
