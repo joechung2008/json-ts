@@ -20,7 +20,7 @@
   "name": "@json-ts/api-nestjs",
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "dev": "tsx watch src/index.ts",
+    "dev": "nest start --watch",
     "format": "prettier --write src",
     "lint": "npm-run-all lint:*",
     "lint:eslint": "eslint src --ext .ts",
