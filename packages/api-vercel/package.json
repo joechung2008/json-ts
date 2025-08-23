@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@json-ts/parser": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.17.2",
+    "@vercel/node": "^5.3.13"
+  },
+  "main": "./dist/index.js",
+  "name": "@json-ts/api-vercel",
+  "private": true,
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "format": "prettier --write .",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint . --ext .ts",
+    "lint:prettier": "prettier --check ."
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "packages/api-vercel/dist/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/v1/parse",
+            "dest": "packages/api-vercel/dist/index.js"
+        }
+    ]
+}

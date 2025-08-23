@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "exactOptionalPropertyTypes": true,
+    "isolatedModules": true,
+    "lib": ["esnext"],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "types": ["node"]
+  },
+  "exclude": ["dist", "node_modules", "./eslint.config.ts"],
+  "include": ["**/*.ts"]
+}
