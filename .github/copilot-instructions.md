@@ -16,7 +16,7 @@
 
 ## Developer Workflows
 
-For usage instructions and developer commands, see [README.md](../../README.md).
+For usage instructions and developer commands, see [README.md](../README.md).
 
 ## Code Structure & Patterns
 
