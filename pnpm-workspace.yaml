@@ -1,5 +1,6 @@
 packages:
   - packages/api-express
+  - packages/api-fastify
   - packages/api-hono
   - packages/api-koa
   - packages/api-nestjs
