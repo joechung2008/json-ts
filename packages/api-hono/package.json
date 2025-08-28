@@ -8,6 +8,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/api-hono",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "dev": "tsx watch src/index.ts",

@@ -9,6 +9,7 @@
     "typescript-eslint": "^8.41.0"
   },
   "name": "json-ts",
+  "packageManager": "pnpm@10.15.0",
   "private": true,
   "scripts": {
     "build": "pnpm -r run build",

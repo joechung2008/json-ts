@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/cli",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "format": "prettier --write src",
