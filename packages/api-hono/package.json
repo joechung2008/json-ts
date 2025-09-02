@@ -1,9 +1,9 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@hono/node-server": "^1.19.0",
+    "@hono/node-server": "^1.19.1",
     "@json-ts/parser": "workspace:*",
-    "hono": "^4.9.4"
+    "hono": "^4.9.5"
   },
   "license": "MIT",
   "main": "./dist/index.js",
