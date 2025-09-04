@@ -10,7 +10,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/api-express",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "dev": "tsx watch src/index.ts",

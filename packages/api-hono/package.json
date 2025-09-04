@@ -3,12 +3,12 @@
   "dependencies": {
     "@hono/node-server": "^1.19.1",
     "@json-ts/parser": "workspace:*",
-    "hono": "^4.9.5"
+    "hono": "^4.9.6"
   },
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/api-hono",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "dev": "tsx watch src/index.ts",
