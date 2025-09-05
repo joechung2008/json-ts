@@ -11,8 +11,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.10",
-    "@nestjs/testing": "^11.1.6",
-    "typescript": "^5.9.2"
+    "@nestjs/testing": "^11.1.6"
   },
   "license": "MIT",
   "main": "./dist/main.js",

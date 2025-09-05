@@ -1,5 +1,9 @@
 {
   "author": "Joe Chung",
+  "devDependencies": {
+    "@vitest/coverage-v8": "3.2.4",
+    "vitest": "^3.2.4"
+  },
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/parser",
@@ -13,9 +17,5 @@
     "test:watch": "vitest"
   },
   "type": "module",
-  "version": "1.0.0",
-  "devDependencies": {
-    "@vitest/coverage-v8": "3.2.4",
-    "vitest": "^3.2.4"
-  }
+  "version": "1.0.0"
 }
