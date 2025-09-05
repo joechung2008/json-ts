@@ -8,7 +8,7 @@
     "build": "tsc --project tsconfig.json",
     "format": "prettier --write src",
     "lint": "npm-run-all lint:*",
-    "lint:eslint": "eslint src --ext .ts",
+    "lint:eslint": "eslint --concurrency=auto",
     "lint:prettier": "prettier --check src",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage --passWithNoTests",

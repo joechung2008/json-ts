@@ -1,13 +1,12 @@
 {
   "author": "Joe Chung",
   "dependencies": {
-    "@hono/node-server": "^1.19.1",
-    "@json-ts/parser": "workspace:*",
-    "hono": "^4.9.6"
+    "@hapi/hapi": "^21.3.10",
+    "@json-ts/parser": "workspace:*"
   },
   "license": "MIT",
   "main": "./dist/index.js",
-  "name": "@json-ts/api-hono",
+  "name": "@json-ts/api-hapi",
   "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "tsc --project tsconfig.json",

@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@types/node": "^22.18.0",
-    "eslint": "^9.34.0",
+    "eslint": "^9.35.0",
     "jiti": "^2.5.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.6.2",
@@ -16,6 +16,8 @@
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
     "start:api-express": "pnpm --filter @json-ts/api-express run start",
+    "start:api-fastify": "pnpm --filter @json-ts/api-fastify run start",
+    "start:api-hapi": "pnpm --filter @json-ts/api-hapi run start",
     "start:api-hono": "pnpm --filter @json-ts/api-hono run start",
     "start:api-koa": "pnpm --filter @json-ts/api-koa run start",
     "start:api-nestjs": "pnpm --filter @json-ts/api-nestjs run start",
