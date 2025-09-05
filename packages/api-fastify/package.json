@@ -4,6 +4,9 @@
     "@json-ts/parser": "workspace:*",
     "fastify": "^5.6.0"
   },
+  "devDependencies": {
+    "tsx": "^4.20.5"
+  },
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/api-fastify",
@@ -12,14 +15,9 @@
     "build": "tsc --project tsconfig.json",
     "dev": "tsx watch src/index.ts",
     "format": "prettier --write src",
-    "lint": "npm-run-all lint:*",
-    "lint:eslint": "eslint --concurrency=auto",
-    "lint:prettier": "prettier --check src",
+    "lint": "eslint --concurrency=auto .",
     "start": "node dist/index.js"
   },
   "type": "module",
-  "version": "1.0.0",
-  "devDependencies": {
-    "tsx": "^4.20.5"
-  }
+  "version": "1.0.0"
 }

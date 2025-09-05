@@ -22,9 +22,7 @@
     "build": "tsc --project tsconfig.json",
     "dev": "nest start --watch",
     "format": "prettier --write src",
-    "lint": "npm-run-all lint:*",
-    "lint:eslint": "eslint --concurrency=auto",
-    "lint:prettier": "prettier --check src",
+    "lint": "eslint --concurrency=auto .",
     "start": "node dist/main.js"
   },
   "type": "module",

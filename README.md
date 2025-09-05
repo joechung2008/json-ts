@@ -42,14 +42,6 @@ pnpm run start:api-fastify
 
 This will start the Fastify API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` with `Content-Type: text/plain` to test the parser.
 
-## Run the Hono API
-
-```sh
-pnpm run start:api-hono
-```
-
-This will start the Hono API workspace. The server listens on http://localhost:3000; send POST requests to this endpoint to test the parser.
-
 ## Run the Hapi API
 
 ```sh
@@ -57,6 +49,14 @@ pnpm run start:api-hapi
 ```
 
 This will start the Hapi API workspace. The server listens on http://localhost:3000; send POST requests to `/api/v1/parse` to test the parser.
+
+## Run the Hono API
+
+```sh
+pnpm run start:api-hono
+```
+
+This will start the Hono API workspace. The server listens on http://localhost:3000; send POST requests to this endpoint to test the parser.
 
 ## Run the Koa API
 
