@@ -30,3 +30,6 @@ Thumbs.db
 packages/*/dist/
 packages/*/coverage/
 packages/*/node_modules/
+
+# Turborepo
+.turbo

@@ -1,4 +1,5 @@
 {
+  "author": "Joe Chung",
   "devDependencies": {
     "@types/node": "^22.18.1",
     "eslint": "^9.35.0",
@@ -14,7 +15,7 @@
   "packageManager": "pnpm@10.15.1",
   "private": true,
   "scripts": {
-    "build": "pnpm -r run build",
+    "build": "turbo run build",
     "format": "pnpm -r run format",
     "lint": "pnpm -r run lint",
     "start:api-express": "pnpm --filter @json-ts/api-express run start",
@@ -27,5 +28,8 @@
     "test": "pnpm --filter @json-ts/parser run test",
     "test:coverage": "pnpm --filter @json-ts/parser run test --coverage"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "turbo": "^2.5.6"
+  }
 }
