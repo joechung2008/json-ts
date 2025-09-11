@@ -10,4 +10,5 @@ build({
   platform: "node",
   plugins: [nodeExternalsPlugin()],
   sourcemap: true,
+  tsconfig: "./tsconfig.json",
 }).catch(() => process.exit(1));

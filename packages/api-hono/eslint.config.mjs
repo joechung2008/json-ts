@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 
 /** @typedef {import('eslint').Linter.Config[]} */
 export default [
-  globalIgnores(["coverage", "dist", "./eslint.config.mjs"]),
+  globalIgnores(["coverage", "dist", "./build.mjs", "./eslint.config.mjs"]),
   ...tseslint.configs.recommended,
   prettierConfig,
   {
