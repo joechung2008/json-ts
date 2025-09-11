@@ -12,7 +12,7 @@
   "name": "@json-ts/api-express",
   "packageManager": "pnpm@10.15.1",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build": "node ./build.mjs",
     "dev": "tsx watch src/index.ts",
     "format": "prettier --write src",
     "lint": "eslint --concurrency=auto .",
