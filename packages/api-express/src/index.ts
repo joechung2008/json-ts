@@ -16,11 +16,9 @@ app.post("/api/v1/parse", (req, res) => {
   }
 });
 
-if (process.env.VERCEL === undefined) {
-  const port = 3000;
-  app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-  });
-}
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
 
 export default app;
