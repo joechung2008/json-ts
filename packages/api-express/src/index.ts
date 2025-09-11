@@ -1,7 +1,7 @@
 import { parse } from "@json-ts/parser";
-import express from "express";
+import express, { type Express } from "express";
 
-const app = express();
+const app: Express = express();
 app.use(express.text());
 
 app.post("/api/v1/parse", (req, res) => {
