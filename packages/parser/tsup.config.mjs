@@ -5,5 +5,5 @@ export default {
   format: ["esm"],
   outDir: "dist",
   sourcemap: true,
-  target: "esnext",
+  tsconfig: "tsconfig.json",
 };
