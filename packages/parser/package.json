@@ -2,6 +2,7 @@
   "author": "Joe Chung",
   "devDependencies": {
     "@vitest/coverage-v8": "3.2.4",
+    "tsup": "^8.5.0",
     "vitest": "^3.2.4"
   },
   "license": "MIT",
@@ -9,7 +10,7 @@
   "name": "@json-ts/parser",
   "packageManager": "pnpm@10.15.1",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build": "tsup",
     "format": "prettier --write src",
     "lint": "eslint --concurrency=auto .",
     "test": "vitest run",
