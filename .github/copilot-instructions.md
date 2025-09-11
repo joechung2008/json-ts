@@ -4,6 +4,9 @@
 
 - **json-ts** is a monorepo for TypeScript-based JSON parsing and CLI tooling.
 
+- **API Server Port Configuration:**
+  - **All API servers listen on the port specified by the `PORT` environment variable. If `PORT` is not set, they default to port 3000. Use `process.env.PORT` for proper operation in most hosting environments.**
+
 - Main packages:
   - `packages/api-express`: API implementation using Express. Provides RESTful endpoints for JSON parsing and related operations.
   - `packages/api-fastify`: API implementation using Fastify. Provides RESTful endpoints for JSON parsing at `/api/v1/parse`.

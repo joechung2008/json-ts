@@ -23,7 +23,7 @@ fastify.post("/api/v1/parse", async (request, reply) => {
   }
 });
 
-const port = 3000;
+const port = Number(process.env.PORT) || 3000;
 
 fastify.listen({ port, host: "0.0.0.0" }, (err) => {
   if (err) {

@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, new FastifyAdapter());
   app.useGlobalPipes(); // No custom pipes needed for text/plain
 
-  await app.listen(3000);
+  await app.listen(Number(process.env.PORT) || 3000);
 }
 
 bootstrap();

@@ -26,6 +26,10 @@ pnpm run format
 pnpm run lint
 ```
 
+## API Server Port Configuration
+
+**Note:** All API servers listen on the port specified by the `PORT` environment variable. If `PORT` is not set, they default to port 3000. Use `process.env.PORT` for proper operation in most hosting environments.
+
 ## Run the Express API
 
 ```sh

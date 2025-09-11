@@ -2,7 +2,7 @@ import { parse } from "@json-ts/parser";
 import Hapi from "@hapi/hapi";
 
 const server = Hapi.server({
-  port: 3000,
+  port: Number(process.env.PORT) || 3000,
   host: "localhost",
 });
 
