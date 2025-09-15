@@ -4,14 +4,14 @@
     "@json-ts/parser": "workspace:*"
   },
   "license": "MIT",
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
   "name": "@json-ts/cli",
   "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "node ./build.mjs",
     "format": "prettier --write src",
     "lint": "eslint --concurrency=auto .",
-    "start": "node dist/index.js"
+    "start": "node dist/index.mjs"
   },
   "type": "module",
   "version": "1.0.0"
