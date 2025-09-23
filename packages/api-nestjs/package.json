@@ -16,7 +16,6 @@
   "license": "MIT",
   "main": "./dist/main.js",
   "name": "@json-ts/api-nestjs",
-  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "node ./build.mjs",
     "dev": "nest start --watch",

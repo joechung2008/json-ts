@@ -14,7 +14,6 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@json-ts/api-koa",
-  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "node ./build.mjs",
     "dev": "tsx watch src/index.ts",
