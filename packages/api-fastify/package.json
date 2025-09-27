@@ -2,10 +2,10 @@
   "author": "Joe Chung",
   "dependencies": {
     "@json-ts/parser": "workspace:*",
-    "fastify": "^5.6.0"
+    "fastify": "^5.6.1"
   },
   "devDependencies": {
-    "tsx": "^4.20.5"
+    "tsx": "^4.20.6"
   },
   "license": "MIT",
   "main": "./dist/index.js",
